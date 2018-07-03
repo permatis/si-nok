@@ -3,11 +3,12 @@
 
 Route::get('/', function () {
     // $kategori = \App\Kategori::all();
-    $potensi = \App\Potensi::all();
+    $potensi = \App\Potensi::with(['kategori', 'gambar'])->get();
 	// $potensi = \App\Potensi::whereIn('id', [15, 43, 18, 21, 16])
  //                        ->with(['kategori', 'gambar'])
  //                        ->orderByRaw(\DB::raw("FIELD(id, 15, 43, 18, 21, 16)"))
  //                        ->get();
+ // return $potensi;
     return view('home', compact('potensi'));
 });
 

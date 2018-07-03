@@ -78,11 +78,11 @@
                             <tr><th>Keterangan</th><td>{{ $p->keterangan }}</td></tr>
                         </tbody>
                     </table>
-                    <div class="rute-slider">
+                    <!-- <div class="rute-slider"> -->
                         @foreach($p->gambar as $gb)
                         <div><img src="{{ asset('images/upload/'.$gb->files) }}"></div>
                         @endforeach
-                    </div>
+                    <!-- </div> -->
                 </div>
               </li>
               @endforeach
@@ -101,12 +101,12 @@
               <!-- <span class="badge rute-font">0 km - 0 min</span> -->
              </div>
             <div class="collapsible-body rute-mobile">
-                <p>{{ $p->keterangan }}</p>
-                <div class="rute-slider">
+                <p>{{ $p->keterangan }}</p>{{ $p->gambar }}
+                <!-- <div class="rute-slider"> -->
                     @foreach($p->gambar as $gb)
                     <div><img src="{{ asset('images/upload/'.$gb->files) }}"></div>
                     @endforeach
-                </div>
+                <!-- </div> -->
             </div>
           </li>
           @endforeach
