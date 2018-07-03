@@ -1,0 +1,204 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+td, th {
+    padding: 10px 5px;
+}
+#map-container {
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.childname {
+    font-size: 18px;
+    top: -5px;
+    position: relative;
+}
+.kategori {
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.kategori > h5 {
+    padding-left: 10px;
+}
+.info-rute {
+    position: fixed;
+    max-height: 400px;
+    overflow-y: auto;
+    right: 14px;
+    top: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 400px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.kategori > h5,
+.info-rute > h5 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.info-rute > .collapsible {
+    margin-bottom: 0;
+    border: 0;
+    margin: 0;
+}
+.info-rute > .collapsible  table,
+.rute > .collapsible  table {
+    font-size: 12px;
+}
+.info-rute > .collapsible  th,
+.info-rute > .collapsible  td,
+.rute > .collapsible  th,
+.rute > .collapsible  td {
+    padding: 5px 5px;
+}
+.info-rute > .collapsible img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.info-rute > .collapsible  .collapsible-body {
+    background-color: #fff;
+    /* overflow-y: auto;
+    max-height: 250px; */
+}
+#info-detail th,
+#info-detail td {
+    padding: 2px 5px;
+}
+.info-slider {
+    display: flex;
+}
+.info-slider div {
+    padding: 5px;
+}
+.info-slider img {
+    width: 100px;
+    height: 100px;
+}
+.rute  .collapsible-body > p{
+    line-height: 1;
+    padding: 10px;
+}
+.map-content {
+    max-width: 300px;
+}
+.map-image {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.card-title h5 {
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.panels {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hapus {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    background-color: #fff;
+}
+.hapus:hover {
+  color: black;
+}
+.input-field {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#prev {
+    display: inline-flex;
+}
+.preview {
+    max-width: 200px;
+    padding: 5px;
+}
+.preview .card-image {
+    height: 150px;
+}
+.preview .card .card-image img {
+    height: 100%;
+}
+.action-btn {
+    display: flex;
+}
+.rute-mobile {
+    line-height: 1;
+}
+.rute-mobile > p {
+    margin-bottom: 5px;
+    padding: 10px !important;
+    padding-top: 0;
+}
+.rute-mobile img {
+    height: 200px !important;
+}
+.rute-font {
+    font-size: 12px !important;
+}
+@media only screen and (max-width: 992px){
+    .brand-logo span{
+        display: none;
+    }
+    .childname {
+        font-size: 12px;
+        top: -8px;
+    }
+    .kategori {
+        display: block !important;
+        top: 70px;
+        right: 15px;
+        left: 0;
+    }
+    .kategori > h5 {
+        display: none;
+    }
+    .kategori > .row {
+        margin-bottom: 0;
+    }
+}
+/* @media only screen and (max-width: 480px)  {
+    .brand-logo span{
+        display: none;
+    }
+    .childname {
+        font-size: 10px;
+        top: -8px;
+    }
+} */
+@media only screen and (min-width: 993px){
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
