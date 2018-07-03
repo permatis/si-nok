@@ -101,7 +101,7 @@
               <!-- <span class="badge rute-font">0 km - 0 min</span> -->
              </div>
             <div class="collapsible-body rute-mobile">
-                <p>{{ $p->keterangan }}</p>{{ $p->gambar }}
+                <p>{{ $p->keterangan }}</p>
                 <!-- <div class="rute-slider"> -->
                     @foreach($p->gambar as $gb)
                     <div><img src="{{ asset('images/upload/'.$gb->files) }}"></div>
